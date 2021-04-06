@@ -19,7 +19,7 @@ const (
 
 // Config defines everything needed for apiserver to deal with external services
 type Config struct {
-	RedisOptions *cache.Options
+	RedisOptions *cache.Options `json:"redis,omitempty" yaml:"redis,omitempty" mapstructure:"redis"`
 }
 
 func New() *Config {

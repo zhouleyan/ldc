@@ -1,5 +1,5 @@
-RedisOptions:
-  Host: "FAKE"
-  Port: 6379
-  Password: 123456
-  DB: 0
+redis:
+  host: "FAKE"
+  port: 6379
+  password: 123456
+  db: 0
