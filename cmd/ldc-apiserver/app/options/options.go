@@ -53,7 +53,6 @@ const fakeInterface string = "FAKE"
 
 // NewAPIServer creates an APIServer instance using given options
 func (s *ServerRunOptions) NewAPIServer(stopCh <-chan struct{}) (*apiserver.APIServer, error) {
-	fmt.Println(s)
 	apiServer := &apiserver.APIServer{
 		Config: s.Config,
 	}
